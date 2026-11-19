@@ -14,3 +14,8 @@ class binaryTree:
         if self.root is not None:
             self.root.recursivePrint()
 
+    # in binaryTree
+    def search(self, target):
+        if self.root is None:
+            return None
+        return self.root.depthFirst(target)
